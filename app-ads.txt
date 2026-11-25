@@ -1,0 +1,6 @@
+# BornoDesk — AdMob Authorized Sellers File (app-ads.txt)
+# Place this file at the root of your website.
+# Replace pub-XXXXXXXXXXXXXXXX with your real AdMob Publisher ID once your
+# AdMob account is approved. Format:
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
