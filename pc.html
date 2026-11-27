@@ -126,9 +126,8 @@ footer.site{border-top:1px solid var(--border);padding:40px 0 32px}
     <div id="winBlock">
       <p class="os-line"><span data-en="You are on" data-bn="আপনি আছেন">You are on</span> <b>Windows</b> ✓</p>
       <div class="dl-row">
-        <a class="btn btn-green" href="https://shazidzone.github.io/bornodesk/downloads/v1.0.0/BornoDeskSetup.exe"><span><span data-en="Download BornoDesk for Windows (.exe)" data-bn="উইন্ডোজের জন্য BornoDesk ডাউনলোড করুন (.exe)">Download BornoDesk for Windows (.exe)</span><small data-en="Free · Windows 10 / 11" data-bn="ফ্রি · Windows 10 / 11">Free · Windows 10 / 11</small></span></a>
-        <!-- TODO: replace the href below with the real Microsoft Store listing URL when it is live. -->
-        <a class="btn btn-ghost" href="#" aria-disabled="true" onclick="return false;"><span><span data-en="Get it from Microsoft Store" data-bn="Microsoft Store থেকে নিন">Get it from Microsoft Store</span><small data-en="Coming soon" data-bn="শীঘ্রই আসছে">Coming soon</small></span></a>
+        <a class="btn btn-green" data-link="windows-store" href="https://apps.microsoft.com/detail/9P1RF4FKT2SB"><span><span data-en="Get it from Microsoft Store" data-bn="Microsoft Store থেকে নিন">Get it from Microsoft Store</span><small data-en="Free · Windows 10 / 11" data-bn="ফ্রি · Windows 10 / 11">Free · Windows 10 / 11</small></span></a>
+        <a class="btn btn-ghost" data-link="windows-exe" href="https://github.com/shazidzone/bornodesk/releases/download/v1.0.0/BornoDeskSetup.exe"><span><span data-en="Download .exe directly" data-bn="সরাসরি .exe ডাউনলোড করুন">Download .exe directly</span><small data-en="v1.0.0 · GitHub Releases" data-bn="v1.0.0 · GitHub Releases">v1.0.0 · GitHub Releases</small></span></a>
       </div>
       <p class="note"><b data-en="100% free." data-bn="১০০% ফ্রি।">100% free.</b> <span data-en="No account required · Local encrypted connection." data-bn="কোনো অ্যাকাউন্ট লাগে না · স্থানীয় এনক্রিপ্টেড সংযোগ।">No account required · Local encrypted connection.</span></p>
     </div>
@@ -148,7 +147,7 @@ footer.site{border-top:1px solid var(--border);padding:40px 0 32px}
     <div class="step">
       <div class="num">1</div>
       <h3 data-en="Run the installer" data-bn="ইনস্টলার চালান">Run the installer</h3>
-      <p data-en="Download BornoDeskSetup.exe and run it. It installs in seconds and shows a QR code on your PC screen." data-bn="BornoDeskSetup.exe ডাউনলোড করে চালান। কয়েক সেকেন্ডে ইনস্টল হয়ে পিসির স্ক্রিনে একটি QR কোড দেখাবে।">Download BornoDeskSetup.exe and run it. It installs in seconds and shows a QR code on your PC screen.</p>
+      <p data-en="Get BornoDesk from the Microsoft Store — or download the .exe directly. It installs in seconds and shows a QR code on your PC screen." data-bn="Microsoft Store থেকে BornoDesk নিন — অথবা সরাসরি .exe ডাউনলোড করুন। কয়েক সেকেন্ডে ইনস্টল হয়ে পিসির স্ক্রিনে একটি QR কোড দেখাবে।">Get BornoDesk from the Microsoft Store — or download the .exe directly. It installs in seconds and shows a QR code on your PC screen.</p>
     </div>
     <div class="step">
       <div class="num">2</div>
@@ -164,7 +163,7 @@ footer.site{border-top:1px solid var(--border);padding:40px 0 32px}
 
   <div class="reassure">
     <b data-en="About the Windows SmartScreen prompt:" data-bn="Windows SmartScreen বার্তা সম্পর্কে:">About the Windows SmartScreen prompt:</b>
-    <span data-en="Windows may show a SmartScreen message because BornoDesk is a new app. Choose “More info” → “Run anyway”. BornoDesk needs no account, and your phone and PC talk only to each other over an encrypted local connection — nothing is uploaded anywhere." data-bn="BornoDesk নতুন অ্যাপ বলে Windows হয়তো একটি SmartScreen বার্তা দেখাবে। “More info” → “Run anyway” বেছে নিন। BornoDesk-এর কোনো অ্যাকাউন্ট লাগে না, আর আপনার ফোন ও পিসি শুধু একে অপরের সঙ্গে এনক্রিপ্টেড লোকাল সংযোগে কথা বলে — কিছুই কোথাও আপলোড হয় না।">Windows may show a SmartScreen message because BornoDesk is a new app. Choose “More info” → “Run anyway”. BornoDesk needs no account, and your phone and PC talk only to each other over an encrypted local connection — nothing is uploaded anywhere.</span>
+    <span data-en="If you install from the direct .exe download, Windows may show a SmartScreen message because BornoDesk is a new app. Choose “More info” → “Run anyway”. BornoDesk needs no account, and your phone and PC talk only to each other over an encrypted local connection — nothing is uploaded anywhere." data-bn="সরাসরি .exe ডাউনলোড করে ইনস্টল করলে, BornoDesk নতুন অ্যাপ বলে Windows হয়তো একটি SmartScreen বার্তা দেখাবে। “More info” → “Run anyway” বেছে নিন। BornoDesk-এর কোনো অ্যাকাউন্ট লাগে না, আর আপনার ফোন ও পিসি শুধু একে অপরের সঙ্গে এনক্রিপ্টেড লোকাল সংযোগে কথা বলে — কিছুই কোথাও আপলোড হয় না।">If you install from the direct .exe download, Windows may show a SmartScreen message because BornoDesk is a new app. Choose “More info” → “Run anyway”. BornoDesk needs no account, and your phone and PC talk only to each other over an encrypted local connection — nothing is uploaded anywhere.</span>
   </div>
 
   <div class="reqs">
@@ -192,6 +191,21 @@ footer.site{border-top:1px solid var(--border);padding:40px 0 32px}
 </footer>
 
 <script>
+/* ============================================================
+   BornoDesk download links — SINGLE CONFIG BLOCK.
+   Future updates (AdMob live, signed final APK, Google Play):
+   change ONLY the URLs below; every download button on this
+   page reads its link from here.
+   ============================================================ */
+window.BORNODESK_LINKS = {
+  WINDOWS_STORE_URL: "https://apps.microsoft.com/detail/9P1RF4FKT2SB",
+  WINDOWS_EXE_URL: "https://github.com/shazidzone/bornodesk/releases/download/v1.0.0/BornoDeskSetup.exe",
+  ANDROID_APK_URL: "https://github.com/shazidzone/bornodesk/releases/download/v1.0.1-beta/BornoDesk-Android-Beta.apk",
+  ANDROID_APK_LABEL: "v1.0.1-beta",
+  PLAY_STORE_URL: ""
+};
+</script>
+<script>
 (function(){
   var LANG_KEY='bornodesk-lang', THEME_KEY='bornodesk-theme';
   var btnEn=document.getElementById('langEn'), btnBn=document.getElementById('langBn');
@@ -217,6 +231,12 @@ footer.site{border-top:1px solid var(--border);padding:40px 0 32px}
     var cur=document.documentElement.getAttribute('data-theme')||'dark';
     applyTheme(cur==='dark'?'light':'dark');
   });}
+  /* Download buttons read their URLs from BORNODESK_LINKS (config block above). */
+  try{
+    var L=window.BORNODESK_LINKS||{};
+    document.querySelectorAll('[data-link="windows-store"]').forEach(function(a){ if(L.WINDOWS_STORE_URL){a.href=L.WINDOWS_STORE_URL;} });
+    document.querySelectorAll('[data-link="windows-exe"]').forEach(function(a){ if(L.WINDOWS_EXE_URL){a.href=L.WINDOWS_EXE_URL;} });
+  }catch(e){}
   /* Smart OS hint: Windows gets the big download button; phones get the copy-link tip. */
   var isWin=/Windows/i.test(navigator.userAgent||'')||/Win/i.test(navigator.platform||'');
   var winBlock=document.getElementById('winBlock'), mobileBlock=document.getElementById('mobileBlock');
