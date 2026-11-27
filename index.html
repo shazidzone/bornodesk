@@ -175,7 +175,7 @@ footer.site{border-top:1px solid var(--border);padding:44px 0 36px;margin-top:20
       <p class="lede" data-en="BornoDesk turns your Android phone into a laptop-grade touchpad, an offline Bangla phonetic keyboard, a file-transfer bridge, a presentation clicker and a Pro Gamepad — all over your own Wi-Fi, USB or Bluetooth. No account. No cloud. Nothing leaves your devices." data-bn="BornoDesk আপনার অ্যান্ড্রয়েড ফোনকে বানিয়ে দেয় ল্যাপটপ-মানের টাচপ্যাড, অফলাইন বাংলা ফোনেটিক কিবোর্ড, ফাইল ট্রান্সফার ব্রিজ, প্রেজেন্টেশন ক্লিকার আর প্রো গেমপ্যাড — সবই আপনার নিজের Wi-Fi, USB বা Bluetooth দিয়ে। কোনো অ্যাকাউন্ট নেই। কোনো ক্লাউড নেই। কিছুই আপনার ডিভাইসের বাইরে যায় না।">BornoDesk turns your Android phone into a laptop-grade touchpad, an offline Bangla phonetic keyboard, a file-transfer bridge, a presentation clicker and a Pro Gamepad — all over your own Wi-Fi, USB or Bluetooth. No account. No cloud. Nothing leaves your devices.</p>
       <div class="cta-row">
         <a class="btn btn-green" href="./pc.html"><span><span data-en="Download for Windows" data-bn="উইন্ডোজের জন্য ডাউনলোড করুন">Download for Windows</span><small data-en="Free · Windows 10 / 11" data-bn="ফ্রি · Windows 10 / 11">Free · Windows 10 / 11</small></span></a>
-        <a class="btn btn-green" data-link="android-apk" href="https://github.com/shazidzone/bornodesk/releases/download/v1.0.1-beta/BornoDesk-Android-Beta.apk"><span><span data-en="Download Android APK (Beta)" data-bn="অ্যান্ড্রয়েড APK ডাউনলোড করুন (বিটা)">Download Android APK (Beta)</span><small data-apk-label>Beta · v1.0.1-beta</small></span></a>
+        <a class="btn btn-green" data-link="android-apk" href="https://github.com/shazidzone/bornodesk/releases/download/v1.0.2/BornoDesk-Android.apk"><span><span data-en="Download Android APK" data-bn="অ্যান্ড্রয়েড APK ডাউনলোড করুন">Download Android APK</span><small data-apk-label>v1.0.2</small></span></a>
         <a class="btn btn-ghost" data-link="play-store" href="#" aria-disabled="true" onclick="return false;"><span><span data-en="Google Play" data-bn="Google Play">Google Play</span><small data-en="Coming soon" data-bn="শীঘ্রই আসছে">Coming soon</small></span></a>
       </div>
       <p class="cta-note" data-en="No account required · Local encrypted connection · Works offline over USB &amp; Bluetooth once unlocked." data-bn="কোনো অ্যাকাউন্ট লাগে না · স্থানীয় এনক্রিপ্টেড সংযোগ · আনলক হয়ে গেলে USB ও Bluetooth-এ অফলাইনেও চলে।">No account required · Local encrypted connection · Works offline over USB &amp; Bluetooth once unlocked.</p>
@@ -311,7 +311,7 @@ footer.site{border-top:1px solid var(--border);padding:44px 0 36px;margin-top:20
           <li data-en="Works offline over USB &amp; Bluetooth once unlocked" data-bn="আনলক হয়ে গেলে USB ও Bluetooth-এ অফলাইনেও চলে">Works offline over USB &amp; Bluetooth once unlocked</li>
         </ul>
         <div class="cta-row" style="margin-top:22px">
-          <a class="btn btn-green" data-link="android-apk" href="https://github.com/shazidzone/bornodesk/releases/download/v1.0.1-beta/BornoDesk-Android-Beta.apk"><span><span data-en="Download Android APK (Beta)" data-bn="অ্যান্ড্রয়েড APK ডাউনলোড করুন (বিটা)">Download Android APK (Beta)</span><small data-apk-label>Beta · v1.0.1-beta</small></span></a>
+          <a class="btn btn-green" data-link="android-apk" href="https://github.com/shazidzone/bornodesk/releases/download/v1.0.2/BornoDesk-Android.apk"><span><span data-en="Download Android APK" data-bn="অ্যান্ড্রয়েড APK ডাউনলোড করুন">Download Android APK</span><small data-apk-label>v1.0.2</small></span></a>
           <a class="btn btn-ghost" data-link="play-store" href="#" aria-disabled="true" onclick="return false;"><span><span data-en="Google Play" data-bn="Google Play">Google Play</span><small data-en="Coming soon" data-bn="শীঘ্রই আসছে">Coming soon</small></span></a>
         </div>
       </div>
@@ -354,8 +354,8 @@ footer.site{border-top:1px solid var(--border);padding:44px 0 36px;margin-top:20
 window.BORNODESK_LINKS = {
   WINDOWS_STORE_URL: "https://apps.microsoft.com/detail/9P1RF4FKT2SB",
   WINDOWS_EXE_URL: "https://github.com/shazidzone/bornodesk/releases/download/v1.0.0/BornoDeskSetup.exe",
-  ANDROID_APK_URL: "https://github.com/shazidzone/bornodesk/releases/download/v1.0.1-beta/BornoDesk-Android-Beta.apk",
-  ANDROID_APK_LABEL: "v1.0.1-beta",
+  ANDROID_APK_URL: "https://github.com/shazidzone/bornodesk/releases/download/v1.0.2/BornoDesk-Android.apk",
+  ANDROID_APK_LABEL: "v1.0.2",
   PLAY_STORE_URL: ""
 };
 </script>
@@ -374,7 +374,7 @@ window.BORNODESK_LINKS = {
     });
     document.querySelectorAll('[data-apk-label]').forEach(function(el){
       var lab=(window.BORNODESK_LINKS&&window.BORNODESK_LINKS.ANDROID_APK_LABEL)||'';
-      el.textContent=(l==='bn'?'বিটা · ':'Beta · ')+lab;
+      el.textContent=lab;
     });
     if(btnEn&&btnBn){btnEn.classList.toggle('active',l==='en');btnBn.classList.toggle('active',l==='bn');}
     try{localStorage.setItem(LANG_KEY,l);}catch(e){}
